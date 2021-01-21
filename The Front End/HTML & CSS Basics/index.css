@@ -1,0 +1,41 @@
+body  {
+    background-color: rgb(212, 175, 55);
+}
+
+.image {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+p, h1, h2, h3 {
+    font-family: Lucida Calligraphy;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.link {
+    
+    font-size: 1em;
+    color: rgb(103, 1, 100);
+
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
