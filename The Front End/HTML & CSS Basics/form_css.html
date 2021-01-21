@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="reset.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Create account">
+    <title>
+        Create account
+    </title>
+
+    <style>
+
+        body {
+            background-color: orangered;
+        }
+
+        form {
+            max-width: 500px;
+            color: white;
+            margin: 5rem auto;
+            border-top: 3px double white;
+            border-bottom: 3px double white;
+        }
+
+        table {
+            
+            margin: 0 auto;
+        }
+
+        td {
+           padding: 1rem
+        }
+
+        .heading {
+            font-size: x-large;
+            font-family: Segoe UI;
+            font-weight: bold;
+            text-align: left;
+            padding-top: 2rem;
+        }
+
+        .enter {
+            text-align: right;
+            font-family: Comic Sans MS;
+        }
+
+        .button {
+            color: orangered;
+            font-weight: bold;
+            width: 120px;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th colspan="2" class="heading">Create Your Account</th>
+        </tr>
+        <tr>
+            <td class="enter">
+                <label for="enter-user">
+                Enter Name :
+                </label>
+            </td>
+            <td>
+                <input type="text" value="Enter user here" id="enter-user">
+            </td>
+        </tr>
+        <tr>
+            <td class="enter">
+                <label for="enter-email">
+                Enter Email ID :
+                </label>
+            </td>
+            <td>
+                <input type="text" value="Enter Email ID here" id="enter-email">
+            </td>
+        </tr>
+        <tr>
+            <td class="enter">
+                <label for="enter-username">
+                Enter Username :
+                </label>
+            </td>
+            <td>
+                <input type="text" value="Enter Username here" id="enter-username">
+            </td>
+        </tr>
+        <tr>
+            <td class="enter">
+                <label for="enter-password">
+                Enter Password :
+                </label>
+            </td>
+            <td>
+                <input type="text" value="Enter Password here" id="enter-password">
+            </td>
+        </tr>
+        <tr>
+            <td class="enter">
+                <label for="confirm-password">
+                Enter Confirm Password :
+                </label>
+            </td>
+            <td>
+                <input type="text" value="Enter Password here" id="confirm-password">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Clear Form" class="button">
+                <input type="submit" value="Create Account" class="button">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+
+</html>
