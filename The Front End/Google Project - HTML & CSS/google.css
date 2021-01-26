@@ -1,0 +1,153 @@
+body {
+  display: block;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+}
+
+.header {
+  padding: 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.about,
+.store,
+.gmail,
+.images,
+.googleapps {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.signin {
+  background-color: #4285f4;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-top: 115px;
+  margin: 0 auto;
+}
+
+input {
+  display: relative;
+  margin: 30px auto;
+  width: 30%;
+  height: 42px;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 1px 80px 1px 52px;
+  outline-style: none;
+  border: 2px solid #e0e0e0
+}
+
+
+
+.buttons {
+  margin-bottom: 60px;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  color: #757575;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  border-radius: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  color: black;
+  border: 1px solid #D9D9D9;
+}
+
+.footer {
+  background: #f2f2f2;
+  font-family: arial, sans-serif;
+  color: #757575;
+  padding: 5px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  left: -5px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.advertising,
+.business,
+.howsearchworks,
+.privacy,
+.terms,
+.settings {
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  input {
+    width: 50%;
+  }
+}
+
+.searchicon {
+  height: 15px;
+  position: relative;
+  left: 40px;
+  top: 4px;
+  width: 15px;
+}
+
+.keyboard {
+  height: 20px;
+  position: relative;
+  top: 6px;
+  right: 80px;
+  width: 20px;
+}
+
+.voice {
+  height: 20px;
+  position: relative;
+  top: 6px;
+  right: 70px;
+  width: 20px;
+}
