@@ -1,0 +1,11 @@
+#container {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 3px solid black;
+    font-size: x-large;
+    min-width: 300px;
+}
