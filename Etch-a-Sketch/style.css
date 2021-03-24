@@ -1,0 +1,33 @@
+body {
+    align-content: center;
+    justify-content: center;
+}
+
+button {
+    display: block;
+    margin: 1.5rem auto;
+    padding: 5px 10px;
+    outline: none;
+    border: 5px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: consolas;
+    font-size: x-large;
+    font-weight: 900;
+    background-color: mediumturquoise;
+    transition: 200ms;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#screen-container {
+    height: 480px;
+    width: 480px;
+    margin: 0 auto;
+    display: grid;
+    border: 60px solid mediumblue;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px #888888;
+}
