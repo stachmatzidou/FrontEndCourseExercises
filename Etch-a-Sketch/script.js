@@ -6,7 +6,7 @@ const container = document.getElementById("screen-container");
 
 
 function createScreen(columns, rows) {
-  for (i = 0; i < (columns * rows); i++) {
+  for (let i = 0, size = columns * rows; i < size; i++) {
     const div = document.createElement("div");
     container.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
@@ -32,7 +32,6 @@ function clearScreen() {
     const squares = container.querySelectorAll(".square");
     squares.forEach(square => square.remove());
 }
-
 
 buttonClear.addEventListener("click", () => {
     clearScreen();
