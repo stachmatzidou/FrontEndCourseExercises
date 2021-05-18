@@ -1,0 +1,198 @@
+header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+}
+
+.logo {
+    width: 100%;
+    max-width: 145px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 32px;
+    height: 32px;
+    color: rgb(46, 163, 242);
+    cursor: pointer;
+}
+
+.hire {
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.hire:hover {
+    background-color: #8dc63f ;
+}
+
+
+#hero {
+    margin-top: 120px;
+    height: 700px;
+}
+
+.hero {
+    width: 97%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero p {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.header,
+.about,
+.careers,
+.pedagogical,
+.testimonials,
+.contact,
+.footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+  #careers {
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(224, 250, 255));
+}
+
+.track,
+.short,
+.nano {
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 16px 12px 0px;
+}
+
+.get-involved {
+    width: 100%;
+}
+
+.get-involved a {
+    width: 30%;
+    max-width: 400px;
+    padding: 20px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.testimonials img {
+    width: 160px;
+    border-radius: 50%;
+    top: 20px;
+    left: -60px;
+}
+
+.testimonials p {
+    padding-left: 100px;
+}
+
+.testimonial1,
+.testimonial2 {
+    min-width: 325px;
+    border-radius: 16px;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+}
+
+.contact a {
+    white-space: nowrap;
+}
+
+.form {
+    min-height: 225px;
+    padding: 24px 32px;
+    border-radius: 32px;
+}
+
+.submit {
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+}
+
+footer img {
+    width: 100%;
+    max-width: 40px;
+    width: auto;
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    .get-involved a {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pedagogical {
+        display: none;
+    }
+
+    .pedagogical2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .pedagogical {
+        display: block;
+    }
+
+    .pedagogical2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    header {
+        position: static;
+        height: 89px;
+    }
+
+    .logo {
+        max-width: 81px;
+    }
+    
+    .links {
+        display: none;
+    }
+
+    #hero {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .links {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contact img {
+        max-width: 100%;
+    }
+}
