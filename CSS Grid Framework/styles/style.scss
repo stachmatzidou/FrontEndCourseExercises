@@ -1,0 +1,256 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+$columns: 12;
+
+@for $i from 1 through $columns {
+    // COLUMNS
+    .col-#{$i} {
+        flex: 0 0 100% / $columns * $i;
+    }
+
+    // COLUMNS OFFSET 
+    .col-offset-left-#{$i} {
+        margin-left: 100% / $columns * $i;
+    }
+
+    .col-offset-right-#{$i} {
+        margin-right: 100% / $columns * $i;
+    }
+
+    // FOR LARGE SIZE SCREENS
+
+    .lg-col-#{$i} {
+        @media  screen and (min-width: 992px)  {
+            flex: 0 0 100% / $columns * $i;
+        }
+    }
+
+    // FOR MEDIUM SIZE SCREENS
+
+    .md-col-#{$i} {
+        @media  screen and (max-width: 991px) and (min-width:577px)  {
+            flex: 0 0 100% / $columns * $i;
+        }
+    }
+
+    // FOR SMALL SIZE SCREENS
+
+    .sm-col-#{$i} {
+        @media  screen and (max-width: 576px) {
+                flex: 0 0 100% / $columns * $i;
+        }
+    }
+}
+
+// GUTTERS, MARGINS, PADDINGS, BORDERS
+
+$spacing: 6;
+
+@for $i from 1 through $spacing {
+    // GUTTERS
+    .g-#{$i} {
+        margin: ($i*-0.5rem) ($i*-0.5rem);
+    
+        [class^="col-"] {
+            padding: ($i*0.5rem) ($i*0.5rem);
+        }
+    }
+
+        // GUTTERS X
+
+    .gx-#{$i} {
+        margin-right: $i*-0.5rem;
+        margin-left: $i*-0.5rem;
+        [class^="col-"] {
+            padding-right: $i*0.5rem;
+            padding-left: $i*0.5rem;
+        }
+    }
+
+        // GUTTERS Y
+
+    .gy-#{$i} {
+        margin-top: $i*-0.5rem;
+        margin-bottom: $i*-0.5rem;
+        [class^="col-"] {
+            padding-top: $i*0.5rem;
+            padding-bottom: $i*0.5rem;
+        }
+    }
+
+    // MARGINS
+
+    .m-#{$i} {
+        margin: $i*0.5rem;
+    }
+
+    .mt-#{$i} {
+        margin-top: $i*0.5rem;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $i*0.5rem;
+    }
+
+    .ml-#{$i} {
+        margin-left: $i*0.5rem;
+    }
+
+    .mr-#{$i} {
+        margin-right: $i*0.5rem;
+    }
+
+    .mx-#{$i} {
+        margin-left: $i*0.5rem;
+        margin-right: $i*0.5rem;
+    }
+
+    .my-#{$i} {
+        margin-top: $i*0.5rem;
+        margin-bottom: $i*0.5rem;
+    }
+
+    // PADDINGS
+
+    .p-#{$i} {
+        padding: $i*0.5rem;
+    }
+
+    .pt-#{$i} {
+        padding-top: $i*0.5rem;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $i*0.5rem;
+    }
+
+    .pl-#{$i} {
+        padding-left: $i*0.5rem;
+    }
+
+    .pr-#{$i} {
+        padding-right: $i*0.5rem;
+    }
+
+    .px-#{$i} {
+        padding-left: $i*0.5rem;
+        padding-right: $i*0.5rem;
+    }
+
+    .py-#{$i} {
+        padding-top: $i*0.5rem;
+        padding-bottom: $i*0.5rem;
+    }
+
+    // BORDERS
+
+    .b-#{$i} {
+        border: $i*1px solid;
+    }
+
+    .bt-#{$i} {
+        border-top: $i*1px solid;
+    }
+
+    .bb-#{$i} {
+        border-bottom: $i*1px solid;
+    }
+
+    .bl-#{$i} {
+        border-left: $i*1px solid;
+    }
+
+    .br-#{$i} {
+        border-right: $i*1px solid;
+    }
+
+    .bx-#{$i} {
+        border-left: $i*0.5rem;
+        border-right: $i*0.5rem;
+    }
+
+    .by-#{$i} {
+        border-top: $i*0.5rem;
+        border-bottom: $i*0.5rem;
+    }
+
+    // GAP FOR FLEX CONTAINERS
+
+    .gap-#{$i} {
+        gap: $i*0.5rem
+    }  
+}
+
+// COLORS
+
+.color-white {
+    color: rgb(255, 255, 255);
+}
+
+.color-black {
+    color: rgb(0, 0, 0);
+}
+
+.color-blue {
+    color: rgb(7, 67, 151);
+}
+
+.color-darkblue {
+    color: rgb(0, 70, 136);
+}
+
+.color-red {
+    color: rgb(255, 0, 0);
+}
+
+.color-green {
+    color: #10febe;
+}
+
+
+
+// BACKGROUND COLORS
+
+.bg-white {
+    background: rgb(255, 255, 255);
+}
+
+.bg-black {
+    background: rgb(0, 0, 0);
+}
+
+.bg-gray {
+    background: rgb(136, 136, 136);
+}
+
+.bg-red {
+    background: rgb(255, 0, 0);
+}
+
+.bg-green {
+    background: #10febe;
+}
+
+.bg-lightblue {
+    background: rgb(234, 254, 254);
+}
+
+.bg-darkblue {
+    background: rgb(0, 70, 136);
+}
+
