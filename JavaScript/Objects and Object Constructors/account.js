@@ -39,6 +39,9 @@ function Account(name) {
   
   const mySecretAccount = new Account("Sofia Heisenberg");
   
-  myAccount.deposit(6596381);
-  myAccount.withdraw(15600);
-  myAccount.getBalance();
+  mySecretAccount.deposit(6596381);
+  mySecretAccount.withdraw(15600);
+  mySecretAccount.getBalance();
+
+  console.log(myAccount);
+  console.log(mySecretAccount);
