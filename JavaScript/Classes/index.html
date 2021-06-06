@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>My library archive</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">My library archive</h1>
+    </header>
+
+    <main>
+        <button class="btn-new-book">NEW BOOK!</button>
+        <form action="" id="form">
+            <label for="title">Title</label>
+            <input type="text" placeholder="Enter book title" id="title" class="input">
+            <label for="author">Author</label>
+            <input type="text" placeholder="Enter book author" id="author" class="input">
+            <label for="pages">Pages</label>
+            <input type="number" placeholder="Enter book pages" id="pages" class="input">
+            <div class="status">
+                <label for="status">Status</label>
+                <select name="status" id="status" class="input">
+                    <option value="Read">Read</option>
+                    <option value="Not Read">Not Read</option>
+                </select>
+            </div>
+            <button type="submit" id="btn-add-book">Add book!</button>
+        </form>
+
+        <div class="archive"></div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
